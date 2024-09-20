@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6081;
+}
+
+.transaction-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-list li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+canvas {
+    margin: 20px auto;
+    display: block;
+    max-width: 600px;
+}
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.transaction-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+/* Style for the text and labels inside each transaction item */
+.transaction-list span {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 5px;
+}
+
+/* Style for the edit and delete buttons */
+.transaction-list button {
+    background-color: #f44336; /* Delete button color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem;
+}
+
+/* Hover effect for the delete button */
+.transaction-list button:hover {
+    background-color: #d32f2f;
+}
+
+/* Style for the edit button */
+.transaction-list button.edit-btn {
+    background-color: #4caf50; /* Edit button color */
+}
+
+.transaction-list button.edit-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Align the description and category more neatly */
+.transaction-list span.description,
+.transaction-list span.category {
+    text-align: left;
+    flex: 2;
+}
+
+/* Make the amount and date slightly larger */
+.transaction-list span.amount,
+.transaction-list span.date {
+    flex: 1.5;
+    font-size: 1.1rem;
+    text-align: center;
+}
